@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Jumpscare_Generic.ogg-168ca3f2f40ef2f6665bc04ea0f2601b.oggstr"
+
+[deps]
+
+source_file="res://Audio/Jumpscare_Generic.ogg"
+dest_files=[ "res://.import/Jumpscare_Generic.ogg-168ca3f2f40ef2f6665bc04ea0f2601b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Light_Humming.ogg-e4b9b1b55b7336e40bc7fd0df98136ef.oggstr"
+
+[deps]
+
+source_file="res://Audio/Light_Humming.ogg"
+dest_files=[ "res://.import/Light_Humming.ogg-e4b9b1b55b7336e40bc7fd0df98136ef.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

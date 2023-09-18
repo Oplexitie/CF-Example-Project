@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Panel.ogg-3eb5b4526786328c2ca796b09d41f1dc.oggstr"
+
+[deps]
+
+source_file="res://Audio/Panel.ogg"
+dest_files=[ "res://.import/Panel.ogg-3eb5b4526786328c2ca796b09d41f1dc.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
