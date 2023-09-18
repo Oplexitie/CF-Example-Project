@@ -12,8 +12,6 @@ var is_jumpscare : bool = false
 # on how the script was configured
 var office_butt_state : Array = []
 
-
-
 func _reset_night_var():
 	can_move = true
 	clock_hour = 0

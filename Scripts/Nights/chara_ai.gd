@@ -221,7 +221,7 @@ func update_ai_pos(animatronic : int):
 					emit_signal("play_jumpscare", "old")
 		5:
 			if skip_blank_look == false:
-				if cam_elements.cam_room_array[10].visible == true and cam_elements.is_ligh_on == true:
+				if cam_elements.cam_room_array[10].visible == true and Global.is_vision_on == true:
 					if (randi()%2 == 0):
 						char_pos[5] -=1
 						return
