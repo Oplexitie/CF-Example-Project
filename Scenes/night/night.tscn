@@ -1561,6 +1561,7 @@ frames = SubResource( 162 )
 [node name="officefan" type="AnimatedSprite" parent="Office_Elements"]
 position = Vector2( 908, 389 )
 frames = SubResource( 166 )
+frame = 1
 playing = true
 
 [node name="officeclock" type="Sprite" parent="Office_Elements"]
@@ -1581,6 +1582,7 @@ hframes = 3
 vframes = 2
 script = ExtResource( 48 )
 path_office_dark = NodePath("../office_dark")
+num_battery_bars = 4
 
 [node name="BatterieTimer" type="Timer" parent="Office_Elements/officebatterie"]
 autostart = true
@@ -1838,7 +1840,7 @@ modulate = Color( 1, 1, 1, 0.235294 )
 position = Vector2( 235, 93 )
 z_index = 17
 frames = SubResource( 3 )
-frame = 3
+frame = 1
 speed_scale = 5.0
 playing = true
 centered = false
@@ -1847,6 +1849,7 @@ centered = false
 position = Vector2( 640, 398 )
 z_index = 17
 frames = SubResource( 38 )
+frame = 1
 playing = true
 
 [node name="CharacterAI" type="Node2D" parent="Other_Elements"]

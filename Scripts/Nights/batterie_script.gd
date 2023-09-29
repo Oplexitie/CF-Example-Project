@@ -3,9 +3,18 @@ extends Sprite
 signal _powerout()
 
 export var path_office_dark : NodePath
+export var num_battery_bars : int
+
+var max_battery : int
+var batt_visual_calc : int
 
 onready var batt_timer = $BatterieTimer
 onready var office_dark = get_node(path_office_dark)
+
+func _ready():
+	max_battery = Global.batterie_left
+	batt_visual_calc = (max_battery+((max_battery/num_battery_bars)/5))-(max_battery/num_battery_bars)*(frame+1)
+	print(batt_visual_calc)
 
 func _on_BatterieTimer_timeout():
 	Global.batterie_left -= Global.batt_usage
@@ -14,14 +23,11 @@ func _on_BatterieTimer_timeout():
 	
 	if Global.batterie_left < 0:
 		_prepare_powerout()
-	elif Global.batterie_left < 25:
-		frame = 4
-	elif Global.batterie_left < 125:
-		frame = 3
-	elif Global.batterie_left < 250:
-		frame = 2
-	elif Global.batterie_left < 375:
-		frame = 1
+		return
+		
+	if Global.batterie_left < batt_visual_calc:
+		frame += 1
+		batt_visual_calc = (max_battery+((max_battery/4)/5))-(max_battery/4)*(frame+1)
 
 func _prepare_powerout():
 	batt_timer.stop()
